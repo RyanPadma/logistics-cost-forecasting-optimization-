@@ -117,7 +117,7 @@ Despite tight constraints, the optimizer produced a lower-cost shipment plan:
 - Bar chart: Original vs. optimized predicted logistics cost per supplier
 - Line plots: Weekly shipment trends before and after optimization
 
-Find all outputs in the `results/figures/` directory.
+Find all outputs in the `result/figures/ML` directory.
 
 ---
 
