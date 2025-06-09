@@ -45,6 +45,21 @@ This model is then embedded into an optimization process that reallocates shipme
 
 ---
 
+## 📊 Exploratory Data Analysis (EDA)
+We performed an initial analysis to understand cost drivers and shipment patterns across suppliers.
+
+**Key EDA Visualizations:**
+1. **Packages Ordered per Shipment by Supplier**  
+   ![Packages Ordered per Shipment by Supplier](results/figures/eda/1. Packages Ordered per Shipment by Supplier.png)
+
+2. **Fuel Surcharge Distribution by Supplier**  
+   ![Fuel Surcharge Distribution by Supplier](results/figures/eda/2. Fuel Surcharge Distribution by Supplier.png)
+
+3. **Logistics Cost Over Time by Supplier**  
+   ![Logistics Cost Over Time by Supplier](results/figures/eda/3. Logistics Cost Over Time by Supplier.png)
+
+> See the full [EDA Report](EDA.md) for all visuals and detailed interpretations.
+
 ## 📈 Machine Learning Component
 
 A Random Forest Regressor predicts weekly logistics costs per supplier using:
