@@ -46,33 +46,42 @@ This model is then embedded into an optimization process that reallocates shipme
 ---
 
 ## 📊 Exploratory Data Analysis (EDA)
+
 We performed an initial analysis to understand cost drivers and shipment patterns across suppliers.
 
 **Key EDA Visualizations:**
 1. **Packages Ordered per Shipment by Supplier**  
-   ![Packages Ordered per Shipment by Supplier](https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/1.%20Packages%20Ordered%20per%20Shipment%20by%20Supplier.png)
+   <img src="https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/1.%20Packages%20Ordered%20per%20Shipment%20by%20Supplier.png" width="400"/>
 
 2. **Fuel Surcharge Distribution by Supplier**  
-   ![Fuel Surcharge Distribution by Supplier](https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/2.%20Fuel%20Surcharge%20Distribution%20by%20Supplier.png)
+   <img src="https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/2.%20Fuel%20Surcharge%20Distribution%20by%20Supplier.png" width="400"/>
 
 3. **Logistics Cost Over Time by Supplier**  
-   ![Logistics Cost Over Time by Supplier](https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/3.%20Logistics%20Cost%20Over%20Time%20by%20Supplier.png)
+   <img src="https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/3.%20Logistics%20Cost%20Over%20Time%20by%20Supplier.png" width="400"/>
 
 > See the full [EDA Report](EDA.md) for all visuals and detailed interpretations.
 
-## 📈 Machine Learning Component
+---
 
-A Random Forest Regressor predicts weekly logistics costs per supplier using:
-- Year and week
-- Fuel surcharge
-- Weekly shipment volume (`packages_ordered`)
-- Supplier identity (via one-hot encoding)
+## 🤖 Machine Learning & Optimization
 
-**Model Results:**
-- Mean Absolute Error (MAE): **35.68**
-- R² Score: **0.97**
+This project features a comprehensive machine learning and optimization workflow:
 
-These indicate a highly reliable prediction model, forming a solid foundation for downstream optimization.
+- **Modeling:** A Random Forest Regressor predicts weekly logistics costs per supplier using:
+  - Year and week
+  - Fuel surcharge
+  - Weekly shipment volume (`packages_ordered`)
+  - Supplier identity (via one-hot encoding)
+
+- **Model Results:**
+  - Mean Absolute Error (MAE): **35.68**
+  - R² Score: **0.97**
+
+- **Optimization:**  
+  The trained model is embedded in a mathematical optimization routine to reallocate shipments, aiming to minimize total predicted logistics cost, while respecting realistic business constraints.
+
+- **Detailed results and visualizations:**  
+  See [ML & Optimization Results](ML.md) for model performance, cost comparison, and shipment optimization analysis.
 
 ---
 
@@ -114,10 +123,13 @@ Despite tight constraints, the optimizer produced a lower-cost shipment plan:
 
 ## 📊 Visuals
 
-- Bar chart: Original vs. optimized predicted logistics cost per supplier
-- Line plots: Weekly shipment trends before and after optimization
+- Bar chart: Original vs. optimized predicted logistics cost per supplier  
+  <img src="https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/ML/Predicted%20Logistics%20Cost%20per%20Supplier%20Original%20vs%20Optimized.png" width="400"/>
 
-Find all outputs in the `result/figures/ML` directory.
+- Line plots: Weekly shipment trends before and after optimization  
+  <img src="https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/ML/Weekly%20Shipment%20DIstribution%20Original%20vs%20Optimized.png" width="800"/>
+
+Find all outputs in the `result/figures/ML` directory and see [ML.md](ML.md) for analysis and interpretation.
 
 ---
 
