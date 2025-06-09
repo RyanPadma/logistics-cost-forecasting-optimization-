@@ -50,13 +50,13 @@ We performed an initial analysis to understand cost drivers and shipment pattern
 
 **Key EDA Visualizations:**
 1. **Packages Ordered per Shipment by Supplier**  
-   ![Packages Ordered per Shipment by Supplier](results/figures/eda/1. Packages Ordered per Shipment by Supplier.png)
+   ![Packages Ordered per Shipment by Supplier](https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/1.%20Packages%20Ordered%20per%20Shipment%20by%20Supplier.png)
 
 2. **Fuel Surcharge Distribution by Supplier**  
-   ![Fuel Surcharge Distribution by Supplier](results/figures/eda/2. Fuel Surcharge Distribution by Supplier.png)
+   ![Fuel Surcharge Distribution by Supplier](https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/2.%20Fuel%20Surcharge%20Distribution%20by%20Supplier.png)
 
 3. **Logistics Cost Over Time by Supplier**  
-   ![Logistics Cost Over Time by Supplier](results/figures/eda/3. Logistics Cost Over Time by Supplier.png)
+   ![Logistics Cost Over Time by Supplier](https://github.com/RyanPadma/logistics-cost-forecasting-optimization-/blob/main/result/figures/eda/3.%20Logistics%20Cost%20Over%20Time%20by%20Supplier.png)
 
 > See the full [EDA Report](EDA.md) for all visuals and detailed interpretations.
 
